@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupsSuite">
+  <test thread-count="5" name="GroupsTest">
+	  <groups>
+		  <run>
+			  <include name="Sanity"></include>
+			  <include name="Regression"></include>
+			  <include name="Retesting"></include>
+			  <include name="Universal"></include>
+			  <include name="Smoke"></include>
+			  <include name="Adhock"></include>
+		  </run>
+      </groups>
+    <classes>
+      <class name="testCases.FinishPageTest"/>
+      <class name="testCases.CheckoutPage2Test"/>
+      <class name="testCases.CheckoutPage1Test"/>
+      <class name="testCases.CartPageTest"/>
+      <class name="testCases.LoginPageTest"/>
+      <class name="testCases.Inventory_Page_Test"/>
+    </classes>
+  </test> <!-- GroupsTest -->
+</suite> <!-- GroupsSuite -->
